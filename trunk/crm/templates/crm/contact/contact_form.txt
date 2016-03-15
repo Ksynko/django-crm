@@ -1,3 +1,0 @@
-You've received a message from {{ name }} <{{ email }}>:
-
-{{ message|safe }}

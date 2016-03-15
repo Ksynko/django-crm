@@ -1,1 +1,0 @@
-ALTER TABLE crm_contact ALTER COLUMN slug SET NOT NULL;
