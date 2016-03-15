@@ -20,7 +20,7 @@ from SimpleXMLRPCServer import SimpleXMLRPCDispatcher
 from django.conf import settings
 from django.http import HttpResponse
 from django.contrib import auth
-from django.core.validators import email_re
+from django.core.validators import EmailValidator
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 
@@ -62,7 +62,7 @@ def rpc_handler(request):
 
 
 def _get_contact(username):
-    if email_re.search(username):
+    if EmailValidator().search(username):
         try:
             contact = crm.Contact.objects.get(user__email=username)
         except crm.Contact.DoesNotExist:

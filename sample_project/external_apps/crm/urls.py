@@ -13,7 +13,7 @@
 #    If not, see <http://www.opensource.org/licenses/bsd-license.php>.
 #
 
-from django.conf.urls.defaults import *
+from django.conf.urls import patterns, url, include
 from django.contrib.auth import views as auth_views
 
 import crm.views as views

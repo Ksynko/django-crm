@@ -23,7 +23,7 @@ class RegistrationManager(models.Manager):
             activation_key=activation_key,
         )
         return pending_login
-    create_pending_login = transaction.commit_on_success(create_pending_login)
+    create_pending_login = transaction.atomic(create_pending_login)
     
     def delete_expired_users(self):
         """
