@@ -64,7 +64,7 @@ class LocationForm(forms.ModelForm):
         self.fields['type'].label = _('Location Type')
 
 
-LOCALFLAVOR_IMPORT_BASE = 'django.contrib.localflavor.%s.forms'
+LOCALFLAVOR_IMPORT_BASE = 'localflavor.%s.forms'
 def get_localflavor_fieldclass(iso, class_name):
         # workaround for http://code.djangoproject.com/ticket/8323
         if iso.upper() == 'GB':

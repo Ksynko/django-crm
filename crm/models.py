@@ -18,7 +18,7 @@ from django.db import models
 from django.contrib.auth.models import User, Group, Permission
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.sites.models import Site
-from django.contrib.localflavor.us import models as us_models
+from localflavor.us import models as us_models
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 from django.utils.functional import curry

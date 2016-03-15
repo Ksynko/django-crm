@@ -17,7 +17,7 @@ import datetime
 
 from django import forms
 from django.contrib.auth.models import User, Group
-from django.contrib.localflavor.us import forms as us_forms
+from localflavor.us import forms as us_forms
 from django.db import transaction
 from django.db.models import Q
 from django.template.defaultfilters import slugify
