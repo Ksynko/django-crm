@@ -3,7 +3,7 @@ import datetime
 
 from django.conf import settings
 from django.db import models
-from django.utils.hashcompat import sha_constructor
+from hashlib import sha1 as sha_constructor
 from django.db import transaction
 from django.contrib.sites.models import Site
 from django.contrib.auth.models import User
