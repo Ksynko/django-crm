@@ -5,7 +5,7 @@ packages = find_packages()
 packages.remove('sample_project')
 setup(
     name='django-crm',
-    version='0.0.0',
+    version='1.0.0',
     author='Caktus Consulting Group',
     author_email='solutions@caktusgroup.com',
     packages=packages,
