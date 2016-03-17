@@ -12,6 +12,7 @@
 #    You should have received a copy of the BSD License along with django-crm.  
 #    If not, see <http://www.opensource.org/licenses/bsd-license.php>.
 #
+from __future__ import unicode_literals
 import datetime
 
 from django.db import models
